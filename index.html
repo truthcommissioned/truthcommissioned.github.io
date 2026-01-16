@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Your Brand</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: #f5f5f5;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      opacity: 0.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #151515;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Truth Commissioned</h1>
-  <p>Merch coming soon.</p>
-  <a href="https://truthcommissioned-shop.fourthwall.com/">Shop</a>
+  <header>
+    <h1>Your Brand</h1>
+    <p>Limited merch. No restocks.</p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300">
+      <h3>Black Hoodie</h3>
+      <a href="https://fourthwall.com/">Buy</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300">
+      <h3>White Tee</h3>
+      <a href="https://fourthwall.com/">Buy</a>
+    </div>
+  </section>
 
 </body>
 </html>
